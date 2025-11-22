@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Umpan Balik</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Judul -->
+    <div class="container">
+     <h1>Formulir Umpan Balik</h1>
+     <h2>Kritik, Saran dan Masukan</h2>
+     <hr>
+
+    <!-- Navigasi -->
+    <nav class="navbar">
+     <a href="index.html">Beranda</a>
+     <a href="biodata.html">Biodata</a>
+     <a href="jadwal.html">Jadwal</a>
+     <a href="galeri.html">Galeri</a>
+     <a href="feedback.html" class="active">Feedback</a>
+  </nav>
+  <hr>
+
+    <!-- formulir kontak dan saran -->
+    <div class="card">
+    <div class="highlight"><h3>Formulir Kontak & Saran</h3></div>
+    <p>Berikan Masukan terbaik Anda untuk pengembangan website Profile ini. semua input bersifat wajib kecuali nama.<p>
+    
+    <!-- kotak form -->
+    <form>
+      <div class="form-group">
+        <label>Nama Anda (Opsional):</label>
+        <input type="text" placeholder="Tulis nama Anda">
+      </div>
+
+      <div class="form-group">
+        <label>Email Anda:</label>
+        <input type="email" placeholder="nama@email.com" required>
+      </div>
+
+      <div class="form-group">
+        <label>Rating Kepuasan Website (Skala 1-10):</label>
+        <input type="number" min="1" max="10" placeholder="Masukkan angka 1 hingga 10" required>
+      </div>
+
+      <div class="form-group">
+        <label>Rekomendasi Website Ini?</label>
+        <div class="radio-group">
+          <label><input type="radio" name="rekomendasi" required> Ya, Sangat menarik</label>
+          <label><input type="radio" name="rekomendasi"> lumayan</label>
+          <label><input type="radio" name="rekomendasi"> Tidak</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Topik yang paling menarik:</label>
+        <div class="checkbox-group">
+          <label><input type="checkbox"> Biodata</label>
+          <label><input type="checkbox"> Jadwal</label>
+          <label><input type="checkbox"> Galeri</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Saran Pengembangan di Bidang:</label>
+        <select>
+          <option>-- Pilih Bidang --</option>
+          <option>Desain</option>
+          <option>Konten</option>
+          <option>Fitur</option>
+          <option>matematika</option>
+          <option>sepak bola</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Pesan/Saran Lengkap:</label>
+        <textarea placeholder="Tulis pesan dan saran Anda secara detail di sini..."></textarea>
+      </div>
+
+      <div class="btn-group">
+        <button type="reset" class="btn btn-reset">Atur Ulang</button>
+        <button type="submit" class="btn btn-submit">Kirim Feedback</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
